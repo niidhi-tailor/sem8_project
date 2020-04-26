@@ -1,0 +1,157 @@
+.cs-container {
+    background-color: #fff;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.post-img {
+    margin-bottom: 75px;
+    width: 100%;
+    height: 70vh;
+    border: 1px solid black;
+}
+
+.blog-post {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+/* Left section of blog display */
+
+.post-left-section {
+    width: 70%;
+}
+
+.post-overview {
+    font-size: 1.75rem;
+}
+
+.post-title {
+    font-size: 3.13rem !important;
+    margin-bottom: 20px;
+}
+
+.post-content {
+    font-size: 1.4rem;
+}
+
+.post-content p {
+    margin-bottom: 30px;
+}
+
+
+/* Right section of Blog display */
+
+.post-right-section {
+    width: 30%;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.post-author {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+  
+  .author-img {
+    max-height: 100%;
+  }
+  
+  .author {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    margin-right: 10px;
+    overflow: hidden;
+    margin-right: 10px;
+  }
+  
+  .author-name {
+    padding-top: 10px;
+    margin: 0;
+  }
+  
+.share-text {
+    text-transform: uppercase;
+    color: grey;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.share-box p {
+    padding: 5px;
+    margin: 10px;
+    color: grey;
+    text-align: center;
+    cursor: pointer;
+}
+
+.share-box .fa-facebook:hover {
+    color: #3B5998;
+    background: none;
+}
+
+.share-box .fa-linkedin :hover {
+    color: #007bb5;
+    background: none;
+}
+
+.share-box .fa-twitter:hover {
+    color: #55ACEE;
+    background: none;
+}
+
+.share-box {
+    margin-top: 200px;
+    opacity: 0;
+    bottom: 0;
+    margin-left: 150px;
+    position: relative;
+    position: fixed;
+}
+
+.share-box .fa{
+    margin-right: 10px;
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.edit-button{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.edit-button a{
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    background-color: #0034FE;
+    color: white !important;
+    border-radius: 25px;
+}
+
+.edit-button a:hover{
+    text-decoration: none;
+}
+
+/* Post */
+.post-category{
+    background-color: lightblue;
+    padding: 10px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.category-container{
+    margin-bottom: 10px;
+}
+
+.post-image{
+    margin-bottom: 30px;
+}

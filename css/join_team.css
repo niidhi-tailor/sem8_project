@@ -1,0 +1,100 @@
+.values-head{
+    margin-bottom: 30px;
+}
+
+.values-section{
+    margin-bottom: 60px;
+}
+
+.values-section img{
+    width: 100%;
+}
+.values-card{
+    margin-bottom: 50px;
+    padding-right: 40px;
+}
+
+.value-title{
+    margin-bottom: 10px;
+}
+
+.value-icon{
+    height: 56px;
+    width: 56px;
+    margin-bottom: 10px;
+}
+
+.opening-heading{
+    margin-bottom: 30px;
+}
+
+.openings-section button{
+    text-decoration: none;
+    padding-left: 0;
+    font-family: "GraphikMedium", sans-serif;
+    font-size: 20px;
+}
+
+.openings-section button{
+    text-decoration: none;
+}
+.openings-section button .fa{
+    transition: ease-in 0.2s;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.openings-section button::before{
+    font-family: "Font Awesome 5 Free";
+	content: '\f078';
+    font-weight: bold;
+    font-size: 16px;
+}
+.openings-section button[aria-expanded="true"]{
+    text-decoration: none;
+}
+
+.openings-section button[aria-expanded="true"]::before{
+    content: '\f077';
+}
+
+
+/* accordion */
+.card{
+    background-color: white;
+    border: 0px !important;
+}
+
+.accordion .card .card-header{
+    border-bottom: 0px;
+}
+
+@media (max-width: 500px){
+    .values-card{
+        padding-right: 0px;
+    }
+
+    .values-container {
+        flex-wrap: unset;
+        overflow-x: auto;
+        padding-bottom: 50px;
+    }
+
+    .value-icon{
+        height: 30px;
+        width: 30px;
+        margin-bottom: 10px;
+    }
+
+    .value-title{
+        font-size: 16px;
+    }
+
+    .value-description{
+        font-size: 12px;
+    }
+
+    h1{
+        font-size: 44px;
+    }
+}

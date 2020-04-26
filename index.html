@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>  Blogs</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom fonts for this template -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+  <!-- Custom styles for this template -->
+  <link href="css/clean-blog.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">  Blog</a>
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="join_team.html">Join Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('img/test-bck-1.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>  Blogs</h1>
+            <span class="subheading">All you need is knowledge and wisdom </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="container blogs-section">
+        <h1 class="mb-4">Latest Blogs</h1>
+        <div class="row">
+          <div class="col-lg-7 col-md-7 col-12 left-section-blog" style="background-image: url('img/test-blog-3.png')">
+              <div class="blog-content">
+                <div class="blog-category">
+                  <p>Editor's Pick</p>
+                </div>
+                <div class="blog-title">
+                  <h3>The Mother's Day gift for spirited Moms</h3>
+                </div>
+                  <div class="author-name">
+                      <p class="name-text">Admin</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-lg-4 col-md-4 col-12 right-section-blogs"> 
+              <div class="right-blog1" style="background-image: url('img/test-blog-4.png')">
+                <div class="blog-content">
+                  <div class="blog-category">
+                      <p>Categroy1</p>
+                      <p>Categroy2</p>
+                  </div>
+                  <div class="blog-title">
+                    <h5>The world is a new place</h5>
+                  </div>
+                    <div class="author-name">
+                        <p class="name-text">Admin</p>
+                    </div>
+                </div>
+              </div>
+              <div class="right-blog2" style="background-image: url('img/test-blog-5.png')">
+                <div class="blog-content">
+                  <div class="blog-category">
+                    <p>How To's</p>
+                  </div>
+                  <div class="blog-title">
+                    <h5>The Science of Best Yorkshire Pudding</h5>
+                  </div>
+                    <div class="author-name">
+                        <p class="name-text">Admin</p>
+                    </div>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Categories section -->
+    <div class="row">
+      <div class="categories">
+        <h4>Search by category</h4>
+        <ul>
+          <li>All</li>
+          <li>Category1</li>
+          <li>Category2</li>
+          <li>Category3</li>
+          <li>Category4</li>
+        </ul>
+      </div>
+    </div>
+    <!-- Recipies -->
+    <div class="row">
+      <div class="container">
+        <div>
+          <h1> Popular Blogs</h1>
+        </div>
+          <div class="row">
+              <div class="post-card col-md-4">
+                  <div class="post-image" style="background-image: url('img/test-image-10.jpg')">
+                  </div>
+                  <div class="date">
+                      12 May , 2019 . 3 min read
+                  </div>
+                  <div>
+                      <a class="post-title" href="{% url 'blog:detail' id=post.pk %}" class="btn-post-read-story">Usability Testing</a>
+                  </div>
+                  <div class="post-overview">
+                    Usability testing is a way to see how easy to use something is by testing it with real users. 
+                  </div>
+                  <div class="post-author">
+                      <div class="author">
+                          <img src="img/profile_pic.png" alt="Profile Pic" class="author-img">
+                      </div>
+                      <div class="author-name">
+                          <p class="name-text">Admin</p>
+                      </div>
+                  </div>
+              </div>
+
+              <!-- BLog card 2 -->
+              <div class="post-card col-md-4">
+                <div class="post-image" style="background-image: url('img/test-image-9.jpg')">
+                </div>
+                <div class="date">
+                    12 May , 2019 . 3 min read
+                </div>
+                <div>
+                    <a class="post-title" href="{% url 'blog:detail' id=post.pk %}" class="btn-post-read-story">Cyber Security</a>
+                </div>
+                <div class="post-overview">
+                  Cyber security is the practice of defending computers, servers, mobile devices, electronic systems, networks, and data from malicious attacks. It's also known as information technology security or electronic information security.
+                </div>
+                <div class="post-author">
+                    <div class="author">
+                        <img src="img/profile_pic.png" alt="Profile Pic" class="author-img">
+                    </div>
+                    <div class="author-name">
+                        <p class="name-text">Admin</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog card 3 -->
+            <div class="post-card col-md-4">
+              <div class="post-image" style="background-image: url('img/test-blog-2.png')">
+              </div>
+              <div class="date">
+                  20 April , 2020 . 4 min read
+              </div>
+              <div>
+                  <a class="post-title" href="{% url 'blog:detail' id=post.pk %}" class="btn-post-read-story">Communication Skills</a>
+              </div>
+              <div class="post-overview">
+                Communication is simply the act of transferring information from one place, person or group to another. Every communication involves (at least) one sender, a message and a recipient.
+              </div>
+              <div class="post-author">
+                  <div class="author">
+                      <img src="img/profile_pic.png" alt="Profile Pic" class="author-img">
+                  </div>
+                  <div class="author-name">
+                      <p class="name-text">Connor Stan</p>
+                  </div>
+              </div>
+          </div>
+
+          <!-- Blog card 4 -->
+          <div class="post-card col-md-4">
+            <div class="post-image" style="background-image: url('img/test-blog-1.png')">
+            </div>
+            <div class="date">
+                12 May , 2019 . 3 min read
+            </div>
+            <div>
+                <a class="post-title" href="{% url 'blog:detail' id=post.pk %}" class="btn-post-read-story">Blogs for business</a>
+            </div>
+            <div class="post-overview">
+              As a business, you rely on consumers to keep buying your products and services. As a new business, you rely on blogging to help you get to these consumers and grab their attention. Without blogging, your website would remain invisible, whereas running a blog makes you searchable and competitive.
+            </div>
+            <div class="post-author">
+                <div class="author">
+                    <img src="img/profile_pic.png" alt="Profile Pic" class="author-img">
+                </div>
+                <div class="author-name">
+                    <p class="name-text">Admin</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Blog card 5 -->
+        <div class="post-card col-md-4">
+          <div class="post-image" style="background-image: url('img/test-blog-6.jpg')">
+          </div>
+          <div class="date">
+              15 March , 2020 . 6 min read
+          </div>
+          <div>
+              <a class="post-title" href="{% url 'blog:detail' id=post.pk %}" class="btn-post-read-story">Start blogging</a>
+          </div>
+          <div class="post-overview">
+           There are many reasons to start a blog for personal use and only a handful of strong ones for business blogging. Blogging for business, projects, or anything else that might bring you money has a very straightforward purpose – to rank your website higher in Google SERPs, a.k.a. increase your visibility.
+          </div>
+          <div class="post-author">
+              <div class="author">
+                  <img src="img/profile_pic.png" alt="Profile Pic" class="author-img">
+              </div>
+              <div class="author-name">
+                  <p class="name-text">Sally O'Brien</p>
+              </div>
+          </div>
+      </div>
+      </div>
+  </div>
+  
+      <!-- <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              Types of cheese
+            </h2>
+            <h3 class="post-subtitle">
+              Problems look mighty small from 150 miles up
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Start Bootstrap</a>
+            on September 24, 2019</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              Spicies that rule indian dishes
+            </h2>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Start Bootstrap</a>
+            on September 18, 2019</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+             Dinning table rules
+            </h2>
+            <h3 class="post-subtitle">
+              We predict too much for the next year and yet far too little for the next ten.
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Start Bootstrap</a>
+            on August 24, 2019</p>
+        </div>
+        <hr>
+        <div class="post-preview">
+          <a href="post.html">
+            <h2 class="post-title">
+              Failure is not an option
+            </h2>
+            <h3 class="post-subtitle">
+              Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="#">Start Bootstrap</a>
+            on July 8, 2019</p>
+        </div> -->
+        <!-- Pager -->
+        <!-- <div class="pager row">
+          <div class="clearfix">
+            <a class="btn btn-primary float-right" href="#">Older Posts &rarr;</a>
+          </div>
+        </div> -->
+      </div>
+      <div class="more outbound">
+        <a class="btn" href="/ blogs">more  blogs</a>
+      </div>
+    </div>
+  </div>
+<!-- 
+  <div>
+    <form method="post" action="{% url 'blog:subscribe' %}">
+        <input type="email" name="email" placeholder="Your email address here">
+        <button type="submit">Subscribe</button>
+    </form>
+</div> -->
+<div class="container subscription-box">
+  <div class="col-lg-4 col-md-4 col-12">
+    <h4>Want update on new posts? Subscribe</h4>
+  </div>
+  <div class="input-group">
+    <input type="email" class="form-control" placeholder="Enter your email" aria-label="Recipient's username" aria-describedby="basic-addon2" class=" pt-2 pb-2">
+    <div class="input-group-append">
+      <button class="btn" type="button">Enter your email Id</button>
+    </div>
+  </div>
+</div>
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto footer">
+          <h4>Follow us on </h4>
+          <ul class="list-inline text-center">
+            <li class="list-inline-item">
+              <a href="#"  class="twitter">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="facebook" >
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-facebook-f fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#" class="instagram">
+                <span class="fa-stack fa-lg">
+                  <i class="fas fa-circle fa-stack-2x"></i>
+                  <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+          <p class="copyright text-muted">Copyright &copy;   Blog 2020</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
